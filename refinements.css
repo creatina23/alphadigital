@@ -1,0 +1,19 @@
+/* ALPHA-SITE-004: somente canais novos e ajustes de acessibilidade. */
+.button, .menu { min-height: 44px; }
+.services a, .header nav a, .text-link { min-height: 44px; display: inline-flex; align-items: center; }
+summary { min-height: 44px; align-items: center; }
+select, textarea { border-color: #aaa79c; }
+.social-section { flex-basis: 100%; border-top: 1px solid var(--line); padding-top: 24px; }
+.social-heading { font-size: 12px; letter-spacing: 1px; margin-bottom: 16px; }
+.social-list { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 0; margin: 0; }
+.social-list li { min-width: 0; }
+.social-channel { display: flex; align-items: center; gap: 12px; min-height: 76px; padding: 14px; background: var(--graphite); border: 1px solid #ffffff40; border-radius: 4px; }
+a.social-channel:hover { border-color: var(--gold); }
+.social-channel img { flex-shrink: 0; }
+.social-label { font-size: 13px; line-height: 1.4; }
+.social-label small { display: block; font-size: 11px; color: var(--muted); margin-top: 5px; }
+.unavailable { border-style: dashed; }
+@media (max-width: 1000px) { .social-list { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 760px) { .social-section { order: 2; } }
+@media (max-width: 370px) { .social-list { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .button:hover { transform: none; } }
